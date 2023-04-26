@@ -4,6 +4,11 @@
     max-width: 700px;
     flex-direction: column;
 }
+.todo h1{
+    font-size: 36px;
+    text-align: right;
+    margin-bottom: 20px;
+}
 
 .todo__input{
     border-radius: 8px;
