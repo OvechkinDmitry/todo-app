@@ -1,0 +1,41 @@
+.toggle-checkbox{
+    align-self: flex-end;
+}
+
+.toggle-checkbox input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 60px;
+    height: 20px;
+    background: #9d9b9b;
+    border-radius: 50px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.toggle-checkbox input:checked[type="checkbox"] {
+    background: #F777A1;
+}
+
+.toggle-checkbox input[type="checkbox"]::after {
+    position: absolute;
+    content: "L";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    width:25px;
+    height: 25px;
+    top: -2px;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(91, 91, 91, 0.2);
+    transition: 0.4s;
+}
+
+.toggle-checkbox input:checked[type="checkbox"]::after {
+    content: "S";
+    left: 60%;
+}
